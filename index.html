@@ -90,17 +90,15 @@ footer{text-align:center;padding:30px 20px;color:var(--text-muted);font-family:'
 <div class="controls">
 <button class="active" onclick="show('tree')">Tree View</button>
 <button onclick="show('explorer')">Path Explorer</button>
-<button onclick="show('svg')">SVG Tree</button>
 <button onclick="show('stats')">Stats</button>
 </div>
 <div id="v-tree"><div class="tree-wrapper"><div class="tree" id="tc"></div></div></div>
 <div id="v-explorer" style="display:none">
 <div class="viz-layout">
-<div class="panel"><h2>Navigation</h2><div class="path-trail" id="pt"></div><div class="choices-grid" id="cg"></div></div>
-<div class="panel"><h2>Outcome Details</h2><div id="nd"></div><div id="dp" style="color:var(--text-muted);font-size:.85rem;text-align:center;padding:40px 0;">Navigate the tree to see outcome details.</div></div>
+<div class="panel" style="grid-column:1/-1"><h2>Click nodes in the tree below to expand. Click outcomes for details.</h2><div id="exp-info" style="color:var(--text-muted);font-size:.85rem;margin-top:8px;">Select a node to see its details and choices here.</div><div id="nd"></div><div id="dp" style="color:var(--text-muted);font-size:.85rem;text-align:center;padding:40px 0;">Navigate the tree to see outcome details.</div></div>
 </div>
+<div style="margin-top:16px"><div class="tree-wrapper"><div class="tree" id="tc2"></div></div></div>
 </div>
-<div id="v-svg" style="display:none"><div class="tree-svg-container"><svg id="svg" class="tree-svg" xmlns="http://www.w3.org/2000/svg"></svg></div></div>
 <div id="v-stats" style="display:none"><div id="stats-content"></div></div>
 <footer>Decision Tree Explorer &bull; Data from ayyushnegii/7-path-decision-tree &bull; No data modified</footer>
 </div>
